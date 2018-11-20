@@ -61,8 +61,37 @@ def number_to_full_month_name(number)
     result = "Invalid!"
   end
 end
-
-def number_to_short_month_name(month)
+def number_to_short_month_name(number)
+  case number
+  when 1
+    result = "Jan"
+  when 2
+    result = "Feb"
+  when 3
+    result = "Mar"
+  when 4
+    result = "Apr"
+  when 5
+    result = "May"
+  when 6
+    result = "Jun"
+  when 7
+    result = "Jul"
+  when 8
+    result = "Aug"
+  when 9
+    result = "Sep"
+  when 10
+    result = "Oct"
+  when 11
+    result = "Nov"
+  when 12
+    result = "Dec"
+  else
+    result = "Invalid!"
+  end
+end
+def short_name_to_month_number(month)
   case month
   when "Jan"
     result = 1
@@ -91,4 +120,19 @@ def number_to_short_month_name(month)
   else
     result = -1
   end
+end
+
+#Given the length of a side of a cube calculate the volume
+def volume_of_a_cube(length)
+  volume = length ** 3
+end
+
+#Given the radius of a sphere calculate the volume
+def volume_of_sphere(radius)
+  volume = ((4.0/3.0)*(radius**3).to_f * 3.14)
+end
+
+#Given a value in farenheit, convert this into celsius.
+def fahrenheit_to_celsius(temperature_in_fahr)
+      temp_in_celcius = ((5.0/9.0) * (temperature_in_fahr - 32.0)).round(1)
 end
