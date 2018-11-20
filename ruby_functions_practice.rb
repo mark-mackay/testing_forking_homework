@@ -128,8 +128,8 @@ def volume_of_a_cube(length)
 end
 
 #Given the radius of a sphere calculate the volume
-def volume_of_sphere(radius)
-  volume = ((4.0/3.0)*(radius**3).to_f * 3.14)
+def volume_of_a_sphere(radius)
+  volume = ((4.0/3.0)*(radius**3).to_f * 3.14).round(1)
 end
 
 #Given a value in farenheit, convert this into celsius.
