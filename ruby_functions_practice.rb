@@ -31,7 +31,7 @@ def add_string_as_number(string_1, string_2)
   return string_1.to_i + string_2.to_i
 end
 
-def number_to_full_name__month_1(number)
+def number_to_full_month_name(number)
   case number
   when 1
     result = "January"
@@ -62,27 +62,33 @@ def number_to_full_name__month_1(number)
   end
 end
 
-def test_number_to_full_name__month_3()
-  result = number_to_full_month_name( 3 )
-  assert_equal( "March", result )
-end
-
-def test_number_to_full_name__month_9()
-  result = number_to_full_month_name( 9 )
-  assert_equal( "September", result )
-end
-
-def test_substring__month_1()
-  first_month_string = number_to_short_month_name( 1 )
-  assert_equal( "Jan", first_month_string )
-end
-
-def test_substring__month_4()
-  fourth_month_string = number_to_short_month_name( 4 )
-  assert_equal( "Apr", fourth_month_string )
-end
-
-def test_substring__month_10()
-  tenth_month_string = number_to_short_month_name( 10 )
-  assert_equal( "Oct", tenth_month_string )
+def number_to_short_month_name(month)
+  case month
+  when "Jan"
+    result = 1
+  when "Feb"
+    result = 2
+  when "Mar"
+    result = 3
+  when "Apr"
+    result = 4
+  when "May"
+    result = 5
+  when "Jun"
+    result = 6
+  when "Jul"
+    result = 7
+  when "Aug"
+    result = 8
+  when "Sep"
+    result = 9
+  when "Oct"
+    result = 10
+  when "Nov"
+    result = 11
+  when "Dec"
+    result = 12
+  else
+    result = -1
+  end
 end
