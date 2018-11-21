@@ -90,7 +90,7 @@ class FunctionsTest < MiniTest::Test
   def test_volume_of_sphere()
     # Assume Pi is just 3.14 here
     volume = volume_of_a_sphere(35)
-    assert_equal(179503.3, volume)
+    assert_equal(179666.7, volume)
   end
 
   #Given a value in farenheit, convert this into celsius.
@@ -98,6 +98,4 @@ class FunctionsTest < MiniTest::Test
     temperature = fahrenheit_to_celsius(100)
     assert_equal(37.8, temperature)
   end
-
-
 end
