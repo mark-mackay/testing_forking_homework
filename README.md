@@ -78,6 +78,9 @@ Description: Given the temperature in fahrenheit as a numeric this returns the n
 ### Testing Outcomes
 
 All tests ran successfully.
+
+### Credits
+Mark Mackay, Mohamed Eshaftri 
   
   
   
